@@ -1,0 +1,26 @@
+﻿<Window x:Class="WPFUI.Views.ShellView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFUI.Views"
+        mc:Ignorable="d" FontSize="18" FontFamily="Segoe UI Light"
+        Title="MiniCasino" Height="495" Width="820" WindowStartupLocation="CenterScreen">
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_Graj" Margin="5" FontSize="16">
+                <MenuItem x:Name="SlotsScreen" Header="_Automaty"></MenuItem>
+                <MenuItem x:Name="RouletteScreen" Header="_Ruletka"></MenuItem>
+                <MenuItem x:Name="BlackjackScreen" Header="_Blackjack"></MenuItem>
+            </MenuItem>
+            
+            <MenuItem Header="_Pomoc" Margin="5" FontSize="16">
+                <MenuItem x:Name="HelpScreen" Header="_Zasady Gry"></MenuItem>
+            </MenuItem>
+            
+        </Menu>
+        <Grid>
+            <ContentControl x:Name="ActiveItem" Margin="5"></ContentControl>
+        </Grid>
+    </DockPanel>
+</Window>
